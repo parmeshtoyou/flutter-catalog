@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/utils/routes.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -32,7 +33,7 @@ class LoginPage extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: () => {
-            print("Hello Parmesh")
+            Navigator.pushNamed(context, MyRoutes.homeRoute)
           }, 
           child: Text("Login"),
           style: TextButton.styleFrom(),)
